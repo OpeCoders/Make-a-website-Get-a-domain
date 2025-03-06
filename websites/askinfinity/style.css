@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(24, 24, 24);
+    
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    padding-top: 100px;
+    flex-direction: column;
+}
+.container h1{
+    display: inline-block;
+    font-size: 7vw;
+    background: linear-gradient(to right,rgb(119, 242, 18),rgb(130, 150, 206) ,rgb(231, 72, 72));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container h2{
+    font-size: 3vw;
+    background: linear-gradient(to right,rgb(130, 249, 228),rgb(244, 255, 28) ,rgb(254, 85, 102));
+    background-clip:text ;
+    -webkit-text-fill-color: transparent;
+}
+
+.prompt-area {
+    width: 100%;
+    height: 120px;
+    background-color: transparent; /* Transparent background */
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.prompt{
+    width: 60%;
+    height: 55%;
+    padding: 20px;
+    border-radius: 30px 0px 0px 30px;
+    background-color: rgba(240, 248, 255, 0.388);
+    border: 2px solid rgb(56, 78, 84);
+    border-right:none;
+    outline:none;
+    box-shadow: inset 2px 2px 10px rgb(0, 0, 0),inset -2px -4px 10px black,inset -2px -4px 10px black;
+    font-size: 18px;
+    color:white
+}
+.btn{
+    border: none;
+    width: 10%;
+    height: 55%;
+    background-color: rgb(10, 183, 235);
+  
+    border-radius: 0px 30px 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(56, 78, 84);
+    border-left:none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgba(14, 122, 155, 0.728);
+}
+.chat-container{
+    width: 100%;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap:20px;
+}
+
+#img{
+ width: 100px;
+ height: 300%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#img img{
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(2px 2px 10px black);
+}
+
+.loading{
+    filter: drop-shadow(2px 2px 2px black);
+}
+/* Styles for the mic button */
+.mic-btn {
+    border: none;
+    width: 10%;
+    height: 55%;
+    background-color: rgb(10, 183, 235);
+    border-radius: 30px;
+    margin-left: 10px; /* Spacing between the send button and mic button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(56, 78, 84);
+    cursor: pointer;
+    font-size: 18px; /* Adjust font size for the 🎤 icon */
+    color: white;
+}
+
+.mic-btn:hover {
+    background-color: rgba(210, 234, 30, 0.728);
+}
+/* User Chat Box */
+.user-chat-box {
+    width: 70%;
+    padding: 20px;
+    background-color: rgb(69, 141, 248);
+    display: flex;
+    gap: 20px;
+    border-radius: 30px 30px 0px 30px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px 4px 10px black;
+    word-wrap: break-word; /* Ensures text breaks appropriately */
+    max-width: 80%; /* Prevents the box from stretching too wide */
+    align-self: flex-start; /* Aligns to the left */
+}
+
+/* AI Chat Box */
+.ai-chat-box {
+    width: 70%;
+    padding: 20px;
+    background-color: rgb(121, 121, 121) ;
+    display: flex;
+    gap: 20px;
+    border-radius: 30px 30px 30px 0px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px 4px 10px black;
+    word-wrap: break-word; /* Ensures text breaks appropriately */
+    max-width: 80%; /* Prevents the box from stretching too wide */
+    align-self: flex-start; /* Aligns to the left */
+}
