@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AskInfinity Speech Conversation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        #img img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .chat-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            overflow-y: auto;
+        }
+
+        .mic-btn {
+            padding: 10px 15px;
+            border-radius: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        .mic-btn:hover {
+            background-color: #45a049;
+        }
+
+        .ai-status {
+            font-size: 16px;
+            color: #555;
+            font-style: italic;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        .ai-status img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Speech-Only Conversation</h1>
+        <button class="mic-btn">🎤 Start Speaking</button>
+    </div>
+
+    <div class="chat-container"></div>
+
+    <script src="speech-conversation.js"></script>
+</body>
+</html>
